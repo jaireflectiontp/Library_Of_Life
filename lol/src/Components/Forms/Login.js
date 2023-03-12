@@ -29,9 +29,10 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className='forms'>
       <div className="login">
                 <h3>Login</h3>
+                <p className='welcome_msg'>Welcome back! Please enter your details.</p>
                 <div className='errorMsg'>{error}</div>
                 <div className="loginControl">
                     <label>Username:</label>

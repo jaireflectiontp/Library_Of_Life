@@ -27,9 +27,9 @@ const Section1 = () => {
       </div>
       {cover &&
         <div className="banner-list">
-          <div className='closeTab' ><i onClick={() => setCover(false)} class="fa-solid fa-xmark"></i></div>
+          <div className='closeTab'><i onClick={() => setCover(false)} class="fa-solid fa-xmark"></i></div>
           {bannercollection.map((image) => (
-            <div onClick={() => selectbanner(image)}><img src={`./Banner/${image}`} alt="" className='select' /></div>
+            <div className='selectbg' onClick={() => selectbanner(image)}><img src={`./Banner/${image}`} alt="" className='select' /></div>
           ))
           }
           <div className='saveBtn'><button onClick={() => setCover(false)}>Save</button></div>

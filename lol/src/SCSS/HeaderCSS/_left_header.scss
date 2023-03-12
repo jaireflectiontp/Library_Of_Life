@@ -7,9 +7,9 @@
     outline: none;
     width: 400px;
     border-radius: 10px;
-    height: 25px;
+    height: 45px;
     margin-left: 20px;
-    padding: 5px 7px;
+    padding: 5px 30px 5px 10px;
 }
 .inp{
     position: relative;
@@ -17,8 +17,9 @@
 .search_icon{
     position: absolute;
     bottom: 0;
-    right: 15px;
+    right: 20px;
     cursor: pointer;
+    font-size: larger;
 }
 .left_header{
     position: relative;
@@ -30,7 +31,6 @@
     top: 40px;
     left: 85px;
     width: 410px;
-    /* height: 103px; */
     border: 1px solid rgb(69 73 252 / 22%);
     background: white;
     border-radius: 5px;

@@ -4,7 +4,7 @@ import Section3 from './Sections/Section3';
 import "../../SCSS/MainCSS/_main.scss";
 const Main = () => {
   return (
-    <div>
+    <div className='main'>
       <Section1/>
       <Section3/>
     </div>

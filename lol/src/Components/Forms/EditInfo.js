@@ -3,7 +3,7 @@ import Registration from './Registration'
 import "../../SCSS/FormCSS/_login.scss"
 const EditInfo = () => {
   return (
-    <div>
+    <div className='forms'>
       <div className="signUp">
        <h3>Edit Profile</h3>
                <Registration page='edit'/>      

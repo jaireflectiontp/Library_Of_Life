@@ -45,24 +45,25 @@ const Right_header = () => {
   }
   const [videoPath, setVideoPath] = useState()
   const setLocalVideo = (e) => {
-    if(e.target.files[0]?.type==='video/mp4'){
-    setVideoPath(e.target.files[0])
+    if (e.target.files[0]?.type === 'video/mp4') {
+      setVideoPath(e.target.files[0])
     }
-    else{
+    else {
       setVideoPath('')
     }
   }
 
   return (
     <div>
-       <div className="right_header">
-        <div onClick={() => uploadSection(true)}><Button variation="upload" label="Upload Video" /></div>
+      <div className="right_header">
+        <div className='upload_btn' onClick={() => uploadSection(true)}><Button variation="upload" label="Upload Video" /></div>
         {dialogBox &&
           <>
             <div className="uploadOverlay" onClick={() => uploadSection(false)}></div>
             <div className="uploadContainer">
-              <div>{vdoDataError}</div>
+              <div className='uploadFieldError'>{vdoDataError}</div>
               <h2>Upload Video</h2>
+              <hr />
               <ul>
                 <li onClick={() => changeTab('External')} className={`${videoFrom === 'External' ? 'activate' : ''}`}>External</li>
                 <li onClick={() => changeTab('Internal')} className={`${videoFrom === 'Internal' ? 'activate' : ''}`}>Internal</li>
@@ -93,9 +94,9 @@ const Right_header = () => {
             </div>
           </>
         }
-        <i class='fa-solid fa-video-plus vid_icon'></i>
+
         <div>
-          <button onClick={() => setMenu(true)}><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <button className='menu_btn' onClick={() => setMenu(true)}><i class="fa-solid fa-bars"></i></button>
         </div>
         {openMenu &&
           <div className="navigation"><Nav setMenu={setMenu} /></div>
