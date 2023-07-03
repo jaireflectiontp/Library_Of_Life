@@ -1,12 +1,14 @@
-.profile_section{
+.profile_section {
     display: flex;
     justify-content: space-between;
 }
-.profile_info{
+
+.profile_info {
     display: flex;
     margin-left: 70px;
 }
-.profile_pic{
+
+.profile_pic {
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -14,18 +16,23 @@
     float: left;
     border: 3px solid white;
 }
-.pp{
+
+.pp {
     width: 100px;
- height: 100px;
+    height: 100px;
     border-radius: 100%;
     cursor: pointer;
 }
-h3{
+
+h3 {
     margin: 0;
 }
-.user_detail{
-    padding: 50px 0 0 25px;;
+
+.user_detail {
+    padding: 50px 0 0 25px;
+    text-transform: capitalize;
 }
-span{
+
+span {
     padding-right: 10px;
 }

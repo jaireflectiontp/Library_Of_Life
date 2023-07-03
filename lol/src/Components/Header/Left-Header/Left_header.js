@@ -27,7 +27,7 @@ const Left_header = () => {
   return (
     <div>
         <div className="left_header">
-                <span className='logo'>LOGO</span>
+                <span className='logo' onClick={()=>window.location.href="/Home"}>LOGO</span>
                 <span className='inp'><input type="text" value={search} onChange={(e) => { setSearch(e.target.value); setShow(true) }} className="inpt" />
                     <i class="fa-sharp fa-solid fa-magnifying-glass search_icon"></i>
                 </span>

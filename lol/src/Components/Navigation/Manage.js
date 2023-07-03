@@ -7,7 +7,10 @@ const Manage = () => {
     <div className='innerPages'>
       <Header/>
       <div>
-        <h2>h</h2>
+      <br />
+        <h1>My Account</h1>
+        <hr className='heading_hr' />
+        <br />
       </div>
     </div>
   )

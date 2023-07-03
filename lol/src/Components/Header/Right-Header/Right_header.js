@@ -56,7 +56,7 @@ const Right_header = () => {
   return (
     <div>
       <div className="right_header">
-        <div className='upload_btn' onClick={() => uploadSection(true)}><Button variation="upload" label="Upload Video" /></div>
+        <div className='upload_btn' onClick={() => uploadSection(true)}><Button variation="upload" label="UPLOAD VIDEO" /></div>
         {dialogBox &&
           <>
             <div className="uploadOverlay" onClick={() => uploadSection(false)}></div>

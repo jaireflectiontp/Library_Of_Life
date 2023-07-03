@@ -1,5 +1,6 @@
 import React from 'react'
 import Tabs from './Tabs'
+
 const Section3 = () => {
 
     const videoList=JSON.parse(localStorage.getItem('videos'))
@@ -13,7 +14,7 @@ const Section3 = () => {
         {
             key: 'Svids',
             Title: 'Shared Videos',
-            Content:'nothing'
+            Content:''
         }
     ]
 
